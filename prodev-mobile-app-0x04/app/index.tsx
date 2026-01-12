@@ -22,7 +22,7 @@ export default function Index() {
             <View style={styles.logoContainer}>
               <Image
                 // style={styles.LogoImage}
-                source={require("@/assets/images/Logo.png")}
+                source={require("@/assets/images/logo.png")}
               />
             </View>
 
