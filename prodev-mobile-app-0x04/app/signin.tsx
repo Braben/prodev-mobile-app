@@ -15,7 +15,7 @@ export default function Index() {
         >
           <View style={styles.navGroup}>
             <Ionicons name="arrow-back" size={25} />
-            <Image source={require("@/assets/images/Logo.png")} />
+            <Image source={require("@/assets/images/logo-green.png")} />
           </View>
         </TouchableOpacity>
 
@@ -49,6 +49,7 @@ export default function Index() {
           <Text style={styles.dividerText}>OR</Text>
           <View style={styles.divider}></View>
         </View>
+
         <View style={styles.socialMediaButtonGroup}>
           <TouchableOpacity style={styles.socialMediaButton}>
             <View
@@ -81,7 +82,7 @@ export default function Index() {
           </TouchableOpacity>
         </View>
         <View style={styles.subTextGroup}>
-          <Text style={styles.subText}>Don't have an account? </Text>
+          <Text style={styles.subText}>Don&apos;t have an account? </Text>
           <TouchableOpacity
             onPress={() => {
               router.push("/join");

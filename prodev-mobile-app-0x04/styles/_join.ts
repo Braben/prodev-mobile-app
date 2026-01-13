@@ -83,14 +83,13 @@ const styles = StyleSheet.create({
     fontWeight: 400,
   },
   signupgroup: {
-    // flexDirection: "col",
+    flexDirection: "row",
     flex: 1,
     justifyContent: "center",
     position: "absolute",
     left: 77,
     right: 76,
     bottom: 33,
-    columnGap: "10",
   },
   signupTitleText: {
     fontSize: 18,
@@ -124,6 +123,22 @@ const styles = StyleSheet.create({
     textAlign: "right",
     color: "#34967C",
     marginTop: 9,
+  },
+  socialMediaButton: {
+    borderWidth: 1,
+    height: 50,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 10,
+  },
+  socialMediaButtonText: {
+    fontSize: 18,
+    color: "#0D0D0D",
+    fontWeight: 400,
+  },
+  socialMediaButtonGroup: {
+    gap: 15,
+    marginTop: 25,
   },
 });
 

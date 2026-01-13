@@ -19,10 +19,10 @@ export default function Index() {
           </View>
         </TouchableOpacity>
 
-        <Text style={styles.titleText}>Create</Text>
+        <Text style={styles.titleText}>Create your</Text>
         <Text style={styles.titleText}>Account</Text>
         <Text style={styles.subText}>
-          Enter your email and password to sign in.
+          Enter your details to create new account
         </Text>
         {/* form area */}
         <View style={styles.formGroup}>
@@ -62,8 +62,8 @@ export default function Index() {
           <View style={styles.divider}></View>
         </View>
 
-        <View style={styles.signupgroup}>
-          <TouchableOpacity>
+        <View style={styles.socialMediaButtonGroup}>
+          <TouchableOpacity style={styles.socialMediaButton}>
             <View
               style={{
                 flexDirection: "row",
@@ -72,13 +72,13 @@ export default function Index() {
               }}
             >
               <Image source={require("@/assets/images/google.png")} />
-              <Text style={styles.signupSubTitleText}>
+              <Text style={styles.socialMediaButtonText}>
                 Continue with Google
               </Text>
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity>
+          <TouchableOpacity style={styles.socialMediaButton}>
             <View
               style={{
                 flexDirection: "row",
@@ -87,15 +87,15 @@ export default function Index() {
               }}
             >
               <Image source={require("@/assets/images/facebook.png")} />
-              <Text style={styles.signupSubTitleText}>
+              <Text style={styles.socialMediaButtonText}>
                 Continue with Facebook
               </Text>
             </View>
           </TouchableOpacity>
         </View>
 
-        <View>
-          <Text style={styles.signupTitleText}>Have an account? Sign In </Text>
+        <View style={styles.signupgroup}>
+          <Text style={styles.signupTitleText}>Have an account? </Text>
           <TouchableOpacity
             onPress={() => {
               router.push("/signin");
